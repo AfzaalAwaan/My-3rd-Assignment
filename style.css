@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+nav{
+    padding: 10px;
+    padding-left: 19px;
+    /* margin: 10px; */
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    background-color: rgb(8, 8, 27);
+    color: white;
+    font-size: 25px;
+}
+.links{
+    display: flex;
+    gap: 40px; 
+}
+.links a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 13px ;
+    font-size: 20px;
+}
+.links a:hover{
+   color: rgb(0, 0, 235);
+   text-decoration: underline;
+}
+span{
+    color: rgb(59, 154, 185);
+}
+.content{
+    text-align: center;
+    margin-top: 70px;}
+
+.heading h2{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.input input{
+    height: 35px;
+    width: 400px;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+}
+.input input{
+    text-align: center;
+}
+.input button{
+     height: 35px;
+     width: 70px;
+     border-radius: 14px;
+     background-color: chartreuse;
+     font-size: 12px;
+     font-weight: bold;
+}
+.input button:hover{
+    cursor: pointer;
+}
+.input input:hover{
+    background-color: lightblue;
+    color: rgb(0, 0, 0);
+}
+.Tasks{
+    text-align: center;
+    margin-top: 20px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+.cards img{
+    width: 50px;
+}
+.card{
+    background-color: aqua;
+    border-radius: 25px;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    padding-top: 20px;
+     box-shadow: 0 4px 10px gray;
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     align-items: center;   
+     .card{
+    transition: transform 0.3s;
+};  
+}
+.icon{
+    padding-bottom: 10px;
+}
+.card:hover{
+transform: translateY(-10px);
+cursor: pointer;
+}
+footer{
+    background-color: teal;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .links{
+        gap: 20px;
+    }
+
+    .content{
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .heading h2{
+        font-size: 35px;
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .input input{
+        width: 90%;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card{
+        width: 90%;
+        max-width: 300px;
+    }
+
+}
